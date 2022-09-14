@@ -20,7 +20,7 @@ int main(){
 
 int n,r;
 cin>>n>>r;
-cout<<"the answer is"<<nCr(n,r)<<endl;
+cout<<"the answer is "<<nCr(n,r)<<endl;
 
 
 }
