@@ -16,6 +16,10 @@ void swapAlternate(int arr[],int n){
 for(int i=0;i<n;i+=2){
     if(i+1<n){
         swap(arr[i],arr[i+1]);
+        //how swap works
+        //temp=a[1]
+        //a[1]=a[0]
+        //a[0]=temp
     }
 }
 }
