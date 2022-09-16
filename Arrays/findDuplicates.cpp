@@ -19,6 +19,7 @@ int main(){
 int arr[10]={1,2,3,4,5,4};
 
     cout<<"the duplicate element is "<<findDuplicate(arr)<<endl;
-
+    cout<<"terminating";
+    cout<<"done";
     return 0;
 }
