@@ -27,17 +27,17 @@ while(j<size3){
     arr3[k++]=arr2[j++];
     
 }
-  int l=0;
-    int sizeofArray=0;
-    while(l<sizeofArray){
-        if(sizeofArray%2!=0){
-            cout<< sizeofArray/2<<" "<<" "<<endl;
-            cout<<endl;
-        }else{
-            cout<<(arr3[sizeofArray-1]/2 + arr3[sizeofArray/2])<<" "<<endl;
+//   int l=0;
+//     int sizeofArray=0;
+//     while(l<sizeofArray){
+//         if(sizeofArray%2!=0){
+//             cout<< sizeofArray/2<<" "<<" "<<endl;
+//             cout<<endl;
+//         }else{
+//             cout<<(arr3[sizeofArray-1]/2 + arr3[sizeofArray/2])<<" "<<endl;
 
-        }
-    }
+//         }
+//     }
    
 
 }
