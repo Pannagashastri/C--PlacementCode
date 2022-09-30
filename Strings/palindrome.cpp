@@ -1,6 +1,16 @@
 #include<iostream>
 using namespace std;
 
+char lower(char ch){
+    if(ch>='a' && ch<='z'){
+        return ch;
+    }else{
+        char temp=ch-'A'+'a';
+        return temp;
+    }
+}
+
+
 bool checkPalindrome(char a[],int n){
     int s=0;
     int e=n-1;
@@ -34,5 +44,8 @@ int len=getLength(name);
 
 
 cout<<"Palindrome or not: "<<checkPalindrome(name,len)<<endl;
+
+cout<<"the char is: "<<lower('b')<<endl;
+cout<<"the char is:"<<lower('C')<<endl;
     return 0;
 }
