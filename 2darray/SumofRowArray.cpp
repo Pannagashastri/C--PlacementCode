@@ -17,10 +17,11 @@ cout<<"printing the sum"<<endl;
 }
 
 int largest(int arr[][3],int row,int col){
-    int max=INT16_MIN;
+    int max=INT_MIN;
     int rowIndex=-1;
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
+    for(int row=0;row<3;row++){
+        int sum=0;
+        for(int col=0;col<3;col++){
             sum+=arr[row][col];
         }
         if(sum>max){
@@ -28,8 +29,8 @@ int largest(int arr[][3],int row,int col){
             rowIndex=row;
         }
     }
-    cout<<"the maximum element in row is "<<max<<endl; 
-    retunr row;
+    cout<<"the maximum sum is "<<max<<endl; 
+    return rowIndex;
 }
 
 
