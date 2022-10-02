@@ -15,7 +15,7 @@ bool checkPalindrome(char a[],int n){
     int s=0;
     int e=n-1;
     while(s<=e){
-        if(a[s]!=a[e]){
+        if(lower(a[s])!=lower(a[e])){
             return 0;
         }else{
             s++;
@@ -49,3 +49,80 @@ cout<<"the char is: "<<lower('b')<<endl;
 cout<<"the char is:"<<lower('C')<<endl;
     return 0;
 }
+//homework codd
+
+// omework code given at 42:39
+
+// #include<bits/stdc++.h>
+
+// using namespace std;
+
+
+
+// string reverse(string x){
+
+//     int i = 0;
+
+//     int j = x.length() - 1;
+
+//     while(i <= j){
+
+//         swap(x[i], x[j]);
+
+//         i++;
+
+//         j--;
+
+//     }
+
+//     x.push_back(' ');
+
+//     return x;
+
+// }
+
+
+
+// int main(){
+
+//     string s, x;
+
+//     vector<string> v;
+
+//     getline(cin, s);
+
+//     int i = 0;
+
+//     int j = s.length() - 1;
+
+//     while(s[i] != '\0'){
+
+//         if(s[i] != ' '){
+
+//             x.push_back(s[i]);
+
+//         }
+
+//         else if(s[i] == ' '){
+
+//             v.push_back(reverse(x));
+
+//             x.clear();
+
+//         }
+
+//         i++;
+
+//     }
+
+//     v.push_back(reverse(x));
+
+//     for(int i = 0; i < v.size(); i++){
+
+//         cout<<v[i];
+
+//     }
+
+//     return 0;
+
+// }
