@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 void printArray(int arr[][3],int row,int col){
@@ -55,7 +56,7 @@ int main()
         cout<<endl;
     }
   /*  printArray(arr,3,3);*/
-  cout<<"the max row at index"<<largest(arr,3,3)<<endl;
+  cout<<"the maximum sum is"<<largest(arr,3,3)<<endl;
 
  return 0;
 }   
