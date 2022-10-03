@@ -16,7 +16,22 @@ cout<<"printing the sum"<<endl;
 
 }
 
-
+int largest(int arr[][3],int row,int col){
+    int max=INT_MIN;
+    int rowIndex=-1;
+    for(int row=0;row<3;row++){
+        int sum=0;
+        for(int col=0;col<3;col++){
+            sum+=arr[row][col];
+        }
+        if(sum>max){
+            max=sum;
+            rowIndex=row;
+        }
+    }
+    cout<<"the maximum sum is "<<max<<endl; 
+    return rowIndex;
+}
 
 
 
@@ -39,7 +54,8 @@ int main()
         }
         cout<<endl;
     }
-    printArray(arr,3,3);
+  /*  printArray(arr,3,3);*/
+  cout<<"the max row at index"<<largest(arr,3,3)<<endl;
 
  return 0;
 }   
